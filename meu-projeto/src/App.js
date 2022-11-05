@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import HelloWorld from './componets/HelloWorld';
-import Frase from './componets/Frase';
+import Evento from './componets/Evento';
+import Form from './componets/Form';
 
 function App() {
 
@@ -17,13 +17,10 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Olá {newName}!</h1>
-      <Frase />
-      <p>Meu primeiro APP!</p>
-      <p>Soma: {sun(3, 3)}</p>
-      <Frase />
-      <img src={url} alt="Minha Imagem" />
-      <HelloWorld />
+      <h1>Testando evento!</h1>
+      <Evento numero={1} />
+      <Evento numero={2} />
+      <Form />
     </div>
   );
 }
